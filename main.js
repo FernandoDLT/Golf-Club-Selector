@@ -1,4 +1,4 @@
-document.querySelector('h1').addEventListener('click', checkYards);
+document.querySelector('button').addEventListener('click', checkYards);
 
 function checkYards() {
     let yards = Number(document.querySelector('#danceDanceRevolution').value);
@@ -6,7 +6,7 @@ function checkYards() {
 
     if (yards < 9) {
         resultElement.textContent = 'Use your Putter, you got this...';
-    } else if (yards >= 10 && yards < 79) {
+    } else if (yards >= 10 && yards < 80) {
         resultElement.textContent = 'Use your 60 Degree Wedge';
     } else if (yards >= 80 && yards < 110) {
         resultElement.textContent = 'Use your Sand Wedge';
@@ -30,7 +30,7 @@ function checkYards() {
         resultElement.textContent = 'Use your 5 Wood';
     } else if (yards >= 220 && yards < 250) {
         resultElement.textContent = 'Use your 3 Wood';
-    } else if (yards > 250) {
+    } else (yards > 250) {
         resultElement.textContent = 'Use your Driver, Big Fella!';
     }
 }
